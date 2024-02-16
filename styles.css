@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+	background-color: #212121;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-size: 60px;
+}
+
+.wrapper {
+	display: flex;
+    flex-direction: column;
+    gap: 15px;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper img{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 80px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px #ffffff38;
+}
+.centeredBox {
+	width: 100%;
+	text-align: center;
+}
+
+.cursor {
+	border-left: 4px solid white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.usual-questions{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.usual-questions button{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    outline: none;
+    border: 1px solid #575757;
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: start;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 500ms ease-in-out;
+}
+
+.usual-questions button:hover{
+    opacity: 0.7;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+input{
+    outline: none;
+    border: 1px solid #575757;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    background-color: transparent;
+    width: 800px;
+    color: #fff;
+}
+
+form button{
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid #575757;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    width: 120px;
+    transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+form button:hover{
+    background-color: #575757b5;
+    transform: scale(1.05);
+}
+
+.error{
+    border-color: crimson;
+    background-color: rgba(220, 20, 60, 0.205);
+}
+
+.pattern{
+    color: #fff;
+    line-height: 30px;
+    font-size: 17px;
+    width: 450px;
+
+}
+
+@media screen and (max-width : 900px){
+    .wrapper{
+        font-size: 30px;
+    }
+
+    body{
+        padding: 3px;
+    }
+
+    .usual-questions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .usual-questions button{
+        width: auto;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input{
+        width: auto;
+    }
+    
+}
